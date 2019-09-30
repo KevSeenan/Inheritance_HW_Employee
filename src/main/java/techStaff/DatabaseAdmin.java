@@ -1,10 +1,10 @@
-//package techStaff;
-//
-//import staff.Employee;
-//
-//public class DatabaseAdminextends Employee {
-//
-//    public DatabaseAdmin(String name, String NINumber, double salary, String deptName) {
-//        super(name, NINumber, salary);
-//    }
-//}
+package techStaff;
+
+import staff.Employee;
+
+public class DatabaseAdmin extends Employee {
+
+    public DatabaseAdmin(String name, String NINumber, double salary) {
+        super(name, NINumber, salary);
+    }
+}
