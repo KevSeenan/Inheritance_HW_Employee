@@ -18,7 +18,8 @@ public class ManagerTest{
         assertEquals("Cherry Longbottom", manager.getName());
     }
 
-
-
-
+    @Test
+    public void canGetNINumber() {
+        assertEquals("JH12345 B", manager.getNINumber());
+    }
 }
