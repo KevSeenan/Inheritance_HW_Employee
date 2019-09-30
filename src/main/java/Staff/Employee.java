@@ -29,6 +29,6 @@ public abstract class Employee {
     }
 
     public double payBonus() {
-        return getSalary() / (100) * 1;
+        return getSalary() + (getSalary() * 0.01);
     }
 }
