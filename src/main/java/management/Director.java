@@ -2,7 +2,7 @@ package management;
 
 public class Director extends Manager {
 
-    double budget;
+    private double budget;
 
     public Director(String name, String NINumber, double salary, String deptName, double budget) {
         super(name, NINumber, salary, deptName);
