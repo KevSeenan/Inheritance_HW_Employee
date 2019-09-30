@@ -3,14 +3,20 @@ package Staff;
 public abstract class Employee {
 
     String name;
-    int NINumber;
+    String NINumber;
     double salary;
+
+    public Employee(String name, String NINumber, double salary) {
+        this.name = name;
+        this.NINumber = NINumber;
+        this.salary = salary;
+    }
 
     public String getName() {
         return name;
     }
 
-    public int getNINumber() {
+    public String getNINumber() {
         return NINumber;
     }
 

@@ -1,15 +1,24 @@
-import Staff.Employee;
+import Staff.Manager;
+import org.junit.Before;
+import org.junit.Test;
 
-public class ManagerTest extends Employee {
+import static org.junit.Assert.assertEquals;
 
-    String deptName = "DevSquad";
+public class ManagerTest{
 
-    public ManagerTest(String deptName) {
-        super(name, NINumber, salary);
-        this.deptName = deptName;
+    Manager manager;
+
+    @Before
+    public void before() {
+        manager = new Manager ("Cherry Longbottom", "JH12345 B", 45000.00, "DevSquad");
     }
 
-    public String getDeptName() {
-        return deptName;
+    @Test
+    public void canGetManagerName() {
+        assertEquals("Cherry Longbottom", manager.getName());
     }
+
+
+
+
 }
