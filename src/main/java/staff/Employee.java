@@ -25,7 +25,9 @@ public abstract class Employee {
     }
 
     public double raiseSalary() {
-        return getSalary() + 3000;
+        if(salary > 0) {
+        }
+        return getSalary() + 3000.00;
     }
 
     public double payBonus() {
